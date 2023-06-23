@@ -1,0 +1,307 @@
+*{
+    box-sizing : border-box ; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000 ;
+    color : white ;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #EEE;
+}
+::-webkit-scrollbar-thumb{
+    background: cornflowerblue;
+    border-radius: 10px;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #2596be;opacity: 1;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.up{
+    position: fixed;
+    background: white;
+    right: 10px;
+    bottom: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 15px;
+    border-radius:50%;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 9999;
+    opacity : 0.5 ;
+    display: none;
+}
+.up:hover{
+    opacity: 1;
+}
+.up.show{
+    display: block;
+}
+
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #01031A ;
+    color : white ;
+    z-index: 9999;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin : auto ; 
+}
+
+.nav-bar ul li{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+.nav-bar ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar ul li a:hover{
+    border-bottom: solid 2px white;
+}
+
+.nav-bar ul li .active{
+    border-bottom: solid 2px white;
+}
+
+.sticky{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+.home .sec1 .myPhoto{
+    width: 400px; 
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 20px 9px #ffffff4a;
+}
+
+
+.home .main .logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+.home .main .logo a{
+    text-decoration: none;
+}
+
+.home .main .logo img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.home{
+    color : white ;
+    padding: 6rem 4rem;
+    
+}
+
+
+.home .sec1 .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.home .sec1 .main p:nth-child(1){
+    font-size: 40px;
+    margin: 0;
+}
+
+.home .sec1 .main p:nth-child(2){
+    font-size: 20px;
+}
+
+.home .sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ; 
+    gap : 5rem ;    
+}
+
+.about{
+    padding: 6rem 4rem;
+    background-color: #01031A;
+}
+
+.about p{
+    margin-left: 2rem;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.about p  :hover{
+    border-bottom:solid 2px white;
+}
+.about p:nth-child(1){
+    margin-left: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.skills{
+    padding: 6rem 4rem;
+}
+
+.skills p{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 ; 
+    margin-bottom: 5rem;
+}
+
+
+
+.skills .circles{
+    position: relative;
+    display: flex;
+    justify-content: center ; 
+    align-items: center ;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.skills .circles .progress{
+    position: relative;
+    width: 160px ;
+    height: 160px ;
+    border-radius: 50% ;
+    background-color: #fff ; 
+    background: #444 linear-gradient(to right , transparent 50% , var(--clr) 0) ;
+}
+
+.skills .circles .progress h3{
+    position: absolute;
+    top: 20% ;
+    left: 50% ;
+    transform: translate(-50% , -50%) ;
+    font-size : 2.5em ;
+    z-index: 1 ; 
+    font-weight: 500;
+}
+
+.skills .circles .progress h3 span{
+    font-size: 0.65em ; 
+    font-weight: 400;
+}
+
+.skills .circles .progress h4{
+    position : absolute ;
+    top : 50% ; 
+    left : 50% ;
+    transform : translateX(-50%) ;
+    z-index: 1;
+    font-weight: 500;
+    color : var(--clr) ; 
+    text-transform: uppercase;
+}
+
+.skills .circles .progress::before{
+    content : "" ;
+    display : block ;
+    height: 100% ;
+    margin-left: 50% ;
+    transform-origin: left ;
+    border-radius: 0 100% 100% 0/50% ;
+}
+
+.skills .circles .progress::after{
+    content : "" ;
+    position: absolute;
+    inset: 10px;
+    border-radius: 50% ;
+    background-color: #222 ;
+}
+
+.skills .circles .progress::before{
+    background: var(--clr);
+    transform: rotate(calc((var(--i) - 50)*0.01turn));
+}
+.skills .circles .progress.less::before{
+    background: #444;
+    transform: rotate(calc((var(--i))*0.01turn));
+
+}
+
+
+.contact{
+    padding: 6rem 4rem;
+    background-color: #01031A;
+}
+.contact p{
+    margin: 0;
+    margin-left: 4rem;
+    font-size: 20px;
+    line-height: 2 ;
+}
+.contact p:nth-child(1){
+    margin-left: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+.contact .logo img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}

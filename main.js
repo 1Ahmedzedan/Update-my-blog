@@ -46,12 +46,15 @@ let lightButton = document.querySelector(".light-button") ;
 let darkButton = document.querySelector(".dark-button") ;
 let body = document.querySelector("body") ;
 let home = document.querySelector(".home") ;
+
+
+
 lightButton.onclick = ()=>{
     lightButton.style.display = "none" ;
     darkButton.style.display = "block" ;
     body.style.backgroundColor = "#fff" ;
-    nav.style.backgroundColor = "#9a9797" ;
-    home.style.backgroundColor = "#9a9797" ;
+    nav.style.backgroundColor = "#8A8AA3" ;
+    home.style.backgroundColor = "#8A8AA3" ;
     body.style.color = "#000" ;
 
 }

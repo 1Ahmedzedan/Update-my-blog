@@ -50,8 +50,8 @@ lightButton.onclick = ()=>{
     lightButton.style.display = "none" ;
     darkButton.style.display = "block" ;
     body.style.backgroundColor = "#fff" ;
-    nav.style.backgroundColor = "#2596be" ;
-    // home.style.backgroundColor = "#fff" ;
+    nav.style.backgroundColor = "#9a9797" ;
+    home.style.backgroundColor = "#9a9797" ;
     body.style.color = "#000" ;
 
 }
@@ -61,6 +61,6 @@ darkButton.onclick = ()=>{
     lightButton.style.display = "block" ;
     body.style.backgroundColor = "#000" ;
     nav.style.backgroundColor = "#01031A" ;
-    // home.style.backgroundColor = "#01031A" ;
+    home.style.backgroundColor = "#01031A" ;
     body.style.color = "#fff" ;
 }

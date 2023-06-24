@@ -286,6 +286,7 @@ a{
 }
 .skills .circles .progress.less::before{
     background: #444;
+    background: #9a9797;
     transform: rotate(calc((var(--i))*0.01turn));
 
 }

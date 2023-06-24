@@ -40,3 +40,27 @@ button.onclick = ()=>{
         top:0
     })
 }
+
+
+let lightButton = document.querySelector(".light-button") ;
+let darkButton = document.querySelector(".dark-button") ;
+let body = document.querySelector("body") ;
+let home = document.querySelector(".home") ;
+lightButton.onclick = ()=>{
+    lightButton.style.display = "none" ;
+    darkButton.style.display = "block" ;
+    body.style.backgroundColor = "#fff" ;
+    nav.style.backgroundColor = "#2596be" ;
+    // home.style.backgroundColor = "#fff" ;
+    body.style.color = "#000" ;
+
+}
+
+darkButton.onclick = ()=>{
+    darkButton.style.display = "none" ;
+    lightButton.style.display = "block" ;
+    body.style.backgroundColor = "#000" ;
+    nav.style.backgroundColor = "#01031A" ;
+    // home.style.backgroundColor = "#01031A" ;
+    body.style.color = "#fff" ;
+}

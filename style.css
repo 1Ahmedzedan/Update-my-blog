@@ -138,6 +138,7 @@ a{
 }
 
 .home{
+    background : #01031A  ; 
     color : white ;
     padding: 6rem 4rem;
     
@@ -171,7 +172,7 @@ a{
 
 .about{
     padding: 6rem 4rem;
-    background-color: #01031A;
+    /* background-color: #01031A; */
 }
 
 .about p{
@@ -277,7 +278,7 @@ a{
 
 .contact{
     padding: 6rem 4rem;
-    background-color: #01031A;
+    /* background-color: #01031A; */
 }
 .contact p{
     margin: 0;

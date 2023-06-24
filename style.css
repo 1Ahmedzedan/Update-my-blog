@@ -183,6 +183,11 @@ a{
 .about p  :hover{
     border-bottom:solid 2px white;
 }
+
+.about p a{
+    color: #2596be ; 
+    font-weight: bold;
+}
 .about p:nth-child(1){
     margin-left: 0;
     font-size: 40px;
